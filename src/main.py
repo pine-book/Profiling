@@ -1,7 +1,5 @@
+data = []
 
-with open('../Data/n1.txt', mode='r') as f:     # データの読み込み　ループにしたい
-    data1 = f.read()
-with open('../Data/n2.txt', mode='r') as f:
-    data1 = f.read()
-with open('../Data/n3.txt', mode='r') as f:
-    data1 = f.read()
+for i in range(10):
+    with open('../Data/n%d.txt', i, mode='r') as f:     # データの読み込み
+        data[i] = f.read()
