@@ -7,7 +7,6 @@ def search_Z(n_gram_list):
         Z_word = f.read().split(',')
         string = "Z世代ではありません"
         for zw in Z_word:
-            print(zw)
             if zw in n_gram_list:
                 string = "Z世代です"
 
