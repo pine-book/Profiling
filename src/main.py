@@ -12,3 +12,4 @@ for i in range(10):
 #語形とそれが出現する文書数の辞書を作成する#
 #n_gram_list = create_n_gram_list(input_files,n_gram_number,representation_type,frequency_threshold,number_of_documents)
 print(filepath)
+
