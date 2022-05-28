@@ -3,6 +3,7 @@ import numpy
 import codecs
 import create_n_gram_list
 import os
+import Zgen
 
 n_gram_number = [1]	#今回は連語はなし。uni-gramのみ
 representation_type = 'WORDFORM'    #謎？？？？？？？？
@@ -17,8 +18,11 @@ for i in range(10):
     input_file.append(input_files[i])
     number_of_documents = create_n_gram_list.count_documents(input_file)
     n_gram_list.append(create_n_gram_list.create_n_gram_list(input_file, n_gram_number, representation_type, frequency_threshold, number_of_documents))
-
+    
+    Zresult = Zgen.search_Z(n_gram_list[i])
+    print(Zresult)
 # create dictionary of word forms and the number of documents they occur in#
 #語形とそれが出現する文書数の辞書を作成する#
 print(n_gram_list[3])   # これはn4の辞書を表示している 
+
 
