@@ -4,6 +4,7 @@ import codecs
 import create_n_gram_list
 import os
 import Zgen
+import voca
 
 n_gram_number = [1]	#今回は連語はなし。uni-gramのみ
 representation_type = 'WORDFORM'    #謎？？？？？？？？
@@ -21,6 +22,8 @@ for i in range(10):
     
     Zresult = Zgen.search_Z(n_gram_list[i])
     print(Zresult)
+    education_result = voca.voca(n_gram_list[i])
+    print(education_result)
 # create dictionary of word forms and the number of documents they occur in#
 #語形とそれが出現する文書数の辞書を作成する#
 print(n_gram_list[3])   # これはn4の辞書を表示している 
