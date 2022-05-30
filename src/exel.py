@@ -1,23 +1,11 @@
 import csv
+CSV_FILE="./Data/oldData.csv"
+z_dict = {}
+with open(CSV_FILE,"r", encoding="UTF-8", errors="", newline="") as csv1:
 
-csv_file = open(".\\Data\\oldData.csv","r")
-reader = csv.reader(csv_file)
+    # csv_file = open(csv1, "r", encoding="UTF-8", errors="", newline="")
+    f = csv.reader(csv1, delimiter=",", doublequote=True, lineterminator="\r\n", quotechar='"', skipinitialspace=True)
+    # header = next(f)
+    for date in f:
+        z_dict[date[0]] = date[1]
 
-list1 = []
-list2 = []
-
-num = 0
-
-for row in reader:
-    for col in row:
-        if num == 0:
-            list1.append(col)
-            num = 1
-        else:
-            list2.append(col)
-            num= 0
-
-            csv_file.close()
-
-            print(list1)
-            print(list2)   
