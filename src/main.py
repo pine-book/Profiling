@@ -14,6 +14,8 @@ input_files = []    #サンプルファイル(n1 ~ n10)のディレクトリの�
 n_gram_list = []    #辞書のリスト(n1~ n10まである)
 
 for i in range(10):
+    
+    path = os.path.join('.','Data',"n" + str(i+1) + '.txt')
     input_files.append(os.path.join('.\\Data\\',"n" + str(i+1) + '.txt'))
     input_file = []
     input_file.append(input_files[i])
