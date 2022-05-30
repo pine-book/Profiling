@@ -1,2 +1,3 @@
 https://parade.com/1293898/marynliles/gen-z-slang-words/  ##Zgenのサイト
-https://github.com/jonathandunn/political_classification/blob/master/!OLD/Feature.Extraction.v.0.13.py    ##n_gram_list
+https://github.com/jonathandunn/political_classification/blob/master/!OLD/Feature.Extraction.v.0.13.py    ##n_gra
+http://crr.ugent.be/archives/806
