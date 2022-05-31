@@ -24,6 +24,7 @@ for i in range(10):
     Zresult = Zgen.search_Z(n_gram_list[i])
     print(Zresult)
     education_result = voca.voca(n_gram_list[i])
+    
     print(education_result)
 # create dictionary of word forms and the number of documents they occur in#
 #語形とそれが出現する文書数の辞書を作成する#
