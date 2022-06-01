@@ -8,5 +8,5 @@ def voca(n_gram_list):
         token_sum += i
     
     if 0.7 < type_sum/token_sum:
-        return "天才"
-    return "バカ"
+        return "This person is wise!"
+    return "Oh, this person is not smart..."
