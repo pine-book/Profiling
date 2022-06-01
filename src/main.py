@@ -12,7 +12,7 @@ frequency_threshold = 0  #謎？おそらく０～１の間で１にちかづく
 
 input_files = []    #サンプルファイル(n1 ~ n10)のディレクトリのリスト
 n_gram_list = []    #辞書のリスト(n1~ n10まである)
-
+Zgen.init() #Z世代リスト初期化
 for i in range(10):
     input_files.append(os.path.join('.\\Data\\',"n" + str(i+1) + '.txt'))
     input_file = []
