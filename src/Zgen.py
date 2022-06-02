@@ -7,7 +7,7 @@ def init():
     # csv_file = open(csv1, "r", encoding="UTF-8", errors="", newline="")
     with open(CSV_FILE, "r", encoding="UTF-8", errors="", newline="") as csv1:
         f = csv.reader(csv1, delimiter=",", doublequote=True, lineterminator="\r\n", quotechar='"', skipinitialspace=True)
-    # header = next(f)
+        # header = next(f)
         for date in f:
             z_dict.append([date[0], date[1]])
 
