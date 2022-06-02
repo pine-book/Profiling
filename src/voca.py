@@ -8,5 +8,5 @@ def voca(n_gram_list):
         token_sum += i
     
     if 0.7 < type_sum/token_sum:
-        return "This person is wise!"
-    return "Oh, this person is not smart..."
+        return "This author is smart!"
+    return "Oh, this author is not smart..."

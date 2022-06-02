@@ -4,12 +4,12 @@ z_dict = []
 
 
 def init():
- with open(CSV_FILE, "r", encoding="UTF-8", errors="", newline="") as csv1:
     # csv_file = open(csv1, "r", encoding="UTF-8", errors="", newline="")
-    f = csv.reader(csv1, delimiter=",", doublequote=True, lineterminator="\r\n", quotechar='"', skipinitialspace=True)
+    with open(CSV_FILE, "r", encoding="UTF-8", errors="", newline="") as csv1:
+        f = csv.reader(csv1, delimiter=",", doublequote=True, lineterminator="\r\n", quotechar='"', skipinitialspace=True)
     # header = next(f)
-    for date in f:
-        z_dict.append([date[0], date[1]])
+        for date in f:
+            z_dict.append([date[0], date[1]])
 
 
 def search_Z(n_gram_list):
