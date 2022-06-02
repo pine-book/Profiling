@@ -1,5 +1,5 @@
 import re
-import numpy
+#import numpy
 import codecs
 def create_n_gram_list(input_files,n_gram_number,flag,threshold,number_of_documents):
 
