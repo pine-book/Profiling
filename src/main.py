@@ -6,7 +6,7 @@ n_gram_number = [1]	# We only use uni-gram.
 representation_type = 'WORDFORM'    # ???
 frequency_threshold = 0  # Probably between 0 and 1, with words decreasing as they get closer to 1 ?　
 
-input_files = []    # sample file's list
+input_files = []    # list of sample file
 n_gram_list = []    # list of dictionary (n1 ~ n10)
 voca.init() # Initialize elderly word list
 
