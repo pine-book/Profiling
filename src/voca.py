@@ -34,8 +34,8 @@ def init():
             old_dict[data[0]] = data[1]
 #---------------------------------------------------------
 # This function determines that the more points of a word
-# in a sentence　5 or less in the sentence, the more it 
-# is judged to be a child.　
+# in a sentence 5 or less in the sentence, the more it 
+# is judged to be a child.
 #---------------------------------------------------------
 # TestData: Data/oldDdata.py 
 def is_adult(n_gram_list):
