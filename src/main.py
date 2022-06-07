@@ -19,5 +19,6 @@ for i in range(10):
     
     print("This is letter number " + str(i + 1) + ".")
     # This function indicate whether adult or not 
+    print(voca.voca(n_gram_list[i]))
     print(voca.is_adult(n_gram_list[i]))
     print(voca.is_Zgen(n_gram_list[i]))
