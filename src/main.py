@@ -2,13 +2,13 @@ import create_n_gram_list
 import os
 import voca
 
-n_gram_number = [1]	# We only use uni-gram.
+n_gram_number = [1]	        # We only use uni-gram.
 representation_type = 'WORDFORM'    # ???
-frequency_threshold = 0  # Probably between 0 and 1, with words decreasing as they get closer to 1 ?　
+frequency_threshold = 0     # Probably between 0 and 1, with words decreasing as they get closer to 1 ?　
 
 input_files = []    # list of sample file
 n_gram_list = []    # list of dictionary (n1 ~ n10)
-voca.init() # Initialize elderly word list
+voca.init()         # Initialize elderly word list
 
 for i in range(10):
     input_files.append(os.path.join('.','Data',"n" + str(i+1) + '.txt')) # read Data file (n1 ~ n10)
