@@ -21,10 +21,3 @@ for i in range(10):
     # This function indicate whether adult or not 
     print(voca.is_adult(n_gram_list[i]))
     print(voca.is_Zgen(n_gram_list[i]))
-# create dictionary of word forms and the number of documents they occur in#
-#語形とそれが出現する文書数の辞書を作成する#
-
-# print(n_gram_list[3])   # これはn4の辞書を表示している 
-
-
-
