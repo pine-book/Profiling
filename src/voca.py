@@ -29,14 +29,15 @@ def init():
 
 def is_adult(n_gram_list):
     # determine the author's age based on authr's vocabulary.
-    old_point = 0.0
+    old_point = 0
     voca_count = 0
     
     for word, value in old_dict.items():
         if word in n_gram_list: 
-            old_point += float(value)
-            voca_count += 1
-    if (round(old_point / voca_count,1 ) > 0.6):
+            if 1 > float(value):
+                old_point += 1
+    print(old_point)
+    if (old_point < 5):
         return "This author may be child"
     return "This author may be adult"
 
