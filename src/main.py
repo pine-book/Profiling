@@ -1,6 +1,3 @@
-import re
-#import numpy
-import codecs
 import create_n_gram_list
 import os
 import voca
