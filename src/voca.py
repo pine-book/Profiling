@@ -46,5 +46,5 @@ def is_Zgen(n_gram_list):
     with open(Z_GEN_FILE) as f:
         z_gen_list = f.read().split(",")
     if z_gen_list in n_gram_list.values():
-        return "Z-gen"
-    return "is not Z-gen"
+        return "The author is Z-gen."
+    return "THe author is not Z-gen."
