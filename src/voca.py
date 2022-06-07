@@ -34,8 +34,8 @@ def init():
             old_dict[data[0]] = data[1]
 #---------------------------------------------------------
 # This function determines that the more points of a word
-# in a sentence　5 or less in the sentence, the more it 
-# is judged to be a child.　
+# in a sentence 5 or less in the sentence, the more it 
+# is judged to be a child.
 #---------------------------------------------------------
 # TestData: Data/oldDdata.py 
 def is_adult(n_gram_list):
@@ -47,8 +47,8 @@ def is_adult(n_gram_list):
             if 1 > float(value):
                 old_point += 1
     if (old_point < 5):
-        return "This author may be child"
-    return "This author may be adult"
+        return "This author may be child."
+    return "This author may be adult."
 
 #---------------------------------------------
 # This function that test data from Z_GEN_FILE 
@@ -59,5 +59,5 @@ def is_Zgen(n_gram_list):
     with open(Z_GEN_FILE) as f:
         z_gen_list = f.read().split(",")
     if z_gen_list in n_gram_list.values():
-        return "The author is Z-gen."
-    return "THe author is not Z-gen."
+        return "The author is Z-gen.\n"
+    return "THe author is not Z-gen.\n"
