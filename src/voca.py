@@ -47,8 +47,8 @@ def is_adult(n_gram_list):
             if 1 > float(value):
                 old_point += 1
     if (old_point < 5):
-        return "This author may be child."
-    return "This author may be adult."
+        return "This author may be child!"
+    return "This author may be adult!"
 
 #---------------------------------------------
 # This function that test data from Z_GEN_FILE 
